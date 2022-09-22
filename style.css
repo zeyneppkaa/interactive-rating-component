@@ -1,0 +1,45 @@
+body {
+  background-color: hsl(216, 12%, 8%);
+}
+
+.card {
+  border-radius: 20px;
+  padding: 30px;
+  background-color: hsl(213, 19%, 18%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-title {
+  font-size: 25px;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 10px;
+}
+
+.card-text {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.numbers {
+  color: hsl(216, 12%, 54%);
+}
+
+#btn_submit {
+  text-align: center;
+  border-radius: 20px;
+  background-color: hsl(36, 100%, 49%);
+  height: 40px;
+  position: relative;
+  margin-bottom: 15px;
+  color: hsl(0, 0%, 100%);
+}
+
+.rate-box {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+}
