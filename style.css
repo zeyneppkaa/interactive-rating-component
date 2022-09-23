@@ -44,10 +44,10 @@ body {
   font-weight: 400;
 }
 
-.numbers {
+/* .numbers {
   color: hsl(216, 12%, 54%);
   text-align: center;
-}
+} */
 
 .numbers div {
   display: inline-block;
@@ -85,4 +85,38 @@ body {
 #btn_submit:hover {
   background-color: #fff;
   color: hsl(25, 97%, 53%);
+}
+
+#thanks-box {
+  transform: translate(-50%, -50%) scale(0.7);
+  transition: all 0.3s ease;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+#thanks-box.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#rate-box.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+#thanks_icon,
+#thanks-box .card-title,
+#thanks-box .card-text,
+#thanks-box #feed-back {
+  text-align: center;
+}
+
+#feed-back {
+  display: inline-block;
+  background-color: hsla(216, 29%, 14%, 0.988);
+  color: hsl(25, 97%, 53%);
+  border-radius: 20px;
 }

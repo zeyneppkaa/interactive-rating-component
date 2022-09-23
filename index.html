@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="rate.js"></script>
     <div class="card rate-box">
       <div class="icon" id="star_icon">
         <img id="star" src="icon-star.svg" alt="star" />
@@ -31,13 +30,26 @@
         appreciated to help us improve our offering!
       </div>
       <div class="my-2 numbers">
-        <div class="mx-2">1</div>
-        <div class="mx-2">2</div>
-        <div class="mx-2">3</div>
-        <div class="mx-2">4</div>
-        <div class="mx-2">5</div>
+        <div class="btn mx-2">1</div>
+        <div class="btn mx-2">2</div>
+        <div class="btn mx-2">3</div>
+        <div class="btn mx-2">4</div>
+        <div class="btn mx-2">5</div>
       </div>
       <div class="btn my-3" id="btn_submit">SUBMIT</div>
     </div>
+
+    <div class="card" id="thanks-box">
+      <div class="icon" id="thanks_icon">
+        <img src="illustration-thank-you.svg" alt="thanks" />
+      </div>
+      <div class="my-3" id="feed-back">You selected 4 out of 5</div>
+      <div class="card-title">Thank you!</div>
+      <div class="card-text">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </div>
+    </div>
+    <script src="rate.js"></script>
   </body>
 </html>
