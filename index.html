@@ -11,19 +11,33 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <script src="rate.js"></script>
     <div class="card rate-box">
-      <div class="icon" id="star_icon"></div>
+      <div class="icon" id="star_icon">
+        <img id="star" src="icon-star.svg" alt="star" />
+      </div>
       <div class="card-title">How did we do?</div>
       <div class="card-text">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </div>
-      <div class="numbers">12345</div>
-      <div class="btn" id="btn_submit">SUBMIT</div>
+      <div class="my-2 numbers">
+        <div class="mx-2">1</div>
+        <div class="mx-2">2</div>
+        <div class="mx-2">3</div>
+        <div class="mx-2">4</div>
+        <div class="mx-2">5</div>
+      </div>
+      <div class="btn my-3" id="btn_submit">SUBMIT</div>
     </div>
   </body>
 </html>

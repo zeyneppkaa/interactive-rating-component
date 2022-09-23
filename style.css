@@ -10,36 +10,79 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 400px;
+  height: 350px;
+  position: absolute;
+}
+
+#star_icon {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: hsla(216, 29%, 14%, 0.988);
+  border-radius: 20px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+#star {
+  margin: 12px;
 }
 
 .card-title {
   font-size: 25px;
   color: hsl(0, 0%, 100%);
   padding-bottom: 10px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
 }
 
 .card-text {
   color: hsl(217, 12%, 63%);
-  font-size: 15px;
   padding-bottom: 10px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
 }
 
 .numbers {
   color: hsl(216, 12%, 54%);
+  text-align: center;
+}
+
+.numbers div {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: hsla(216, 29%, 14%, 0.988);
+  color: hsl(216, 12%, 54%);
+  border-radius: 1000px;
+  text-align: center;
+}
+
+.numbers div:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+  transition-duration: 0.4s;
+}
+
+.numbers div:active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
 }
 
 #btn_submit {
   text-align: center;
   border-radius: 20px;
-  background-color: hsl(36, 100%, 49%);
+  background-color: hsl(25, 97%, 53%);
   height: 40px;
   position: relative;
-  margin-bottom: 15px;
   color: hsl(0, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  transition-duration: 0.4s;
 }
 
-.rate-box {
-  width: 400px;
-  height: 300px;
-  position: absolute;
+#btn_submit:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
 }
