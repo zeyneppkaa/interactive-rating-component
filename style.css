@@ -4,7 +4,7 @@ body {
 
 .card {
   border-radius: 20px;
-  padding: 30px;
+  padding: 20px;
   background-color: hsl(213, 19%, 18%);
   position: absolute;
   top: 50%;
@@ -21,7 +21,6 @@ body {
   height: 44px;
   background-color: hsla(216, 29%, 14%, 0.988);
   border-radius: 20px;
-  margin-bottom: 12px;
   text-align: center;
 }
 
@@ -32,22 +31,15 @@ body {
 .card-title {
   font-size: 25px;
   color: hsl(0, 0%, 100%);
-  padding-bottom: 10px;
   font-family: "Overpass", sans-serif;
   font-weight: 700;
 }
 
 .card-text {
   color: hsl(217, 12%, 63%);
-  padding-bottom: 10px;
   font-family: "Overpass", sans-serif;
   font-weight: 400;
 }
-
-/* .numbers {
-  color: hsl(216, 12%, 54%);
-  text-align: center;
-} */
 
 .numbers div {
   display: inline-block;
@@ -65,9 +57,8 @@ body {
   transition-duration: 0.4s;
 }
 
-.numbers div:active {
-  background-color: hsl(25, 97%, 53%);
-  color: hsl(0, 0%, 100%);
+.numbers .btn.disabled {
+  pointer-events: none;
 }
 
 #btn_submit {
@@ -87,7 +78,7 @@ body {
   color: hsl(25, 97%, 53%);
 }
 
-#thanks-box {
+#thanks_box {
   transform: translate(-50%, -50%) scale(0.7);
   transition: all 0.3s ease;
 
@@ -95,26 +86,20 @@ body {
   pointer-events: none;
 }
 
-#thanks-box.active {
+#thanks_box.show {
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
 }
 
-#rate-box.show {
-  opacity: 1;
-  pointer-events: auto;
-  transform: scale(1);
-}
-
 #thanks_icon,
-#thanks-box .card-title,
-#thanks-box .card-text,
-#thanks-box #feed-back {
+#thanks_box .card-title,
+#thanks_box .card-text,
+#thanks_box #feedback {
   text-align: center;
 }
 
-#feed-back {
+#feedback {
   display: inline-block;
   background-color: hsla(216, 29%, 14%, 0.988);
   color: hsl(25, 97%, 53%);
